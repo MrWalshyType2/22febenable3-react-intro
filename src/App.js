@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import WeatherDisplay from "./components/conditional-rendering";
+import MyFirstComponent from "./components/first-component";
+import DateDisplay from "./components/first-jsx-component";
+import UsernameList from "./components/rendering-arrays-of-data";
+import TodoListTable from "./components/todo-list-table";
 
+// App is also a function component
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>My first React app</h1>
+      <p>Created with <code>npm create-react-app</code></p>
+
+      {/* 
+        JS code is specified inside curly braces
+
+        To render a custom component, we must import it and then
+        specify the component like we do in HTML.
+
+        Key rules:
+        - custom components are self-closing
+        - we must specify the forward slash before the closing bracket
+      */}
+      <MyFirstComponent />
+      <TodoListTable />
+      <DateDisplay />
+      <WeatherDisplay />
+      <UsernameList />
     </div>
   );
 }
