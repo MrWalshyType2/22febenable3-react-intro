@@ -7,9 +7,19 @@ import EditUserForms from "./components/rendering-arrays-of-data-2";
 import TernaryWeatherDisplay from "./components/ternary-conditional-rendering";
 import TodoListTable from "./components/todo-list-table";
 import BlogPost from "./props/BlogPost";
+import ClickCounter from "./state/ClickCounter";
+import EditUser from "./state/EditUser";
+import Users from "./state/Users";
 
 // App is also a function component
 function App() {
+  const user = {
+    _id: "j98f9e89er8",
+    username: "freddyo123",
+    age: 32,
+    email: "freddyo123@mail.com"
+  }
+
   return (
     <div className="App">
       <h1>My first React app</h1>
@@ -25,20 +35,27 @@ function App() {
         - custom components are self-closing
         - we must specify the forward slash before the closing bracket
       */}
-      <MyFirstComponent />
+      {/* <MyFirstComponent />
       <TodoListTable />
       <DateDisplay />
       <WeatherDisplay />
       <UsernameList />
       <TernaryWeatherDisplay />
       <LogicalWeatherDisplay />
-      <EditUserForms />
+      <EditUserForms /> */}
       <br /><br /><br /><br />
 
       {/* passing props 
           - we pass props as attributes
       */}
-      <BlogPost title="The blog post" content="The blogs content" />
+      {/* <BlogPost title="The blog post" content="The blogs content" /> */}
+
+      {/* STATE */}
+      {/* <ClickCounter /> */}
+      
+      {/* <EditUser user={user} /> */}
+
+      <Users />
     </div>
   );
 }
