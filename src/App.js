@@ -1,7 +1,9 @@
 import WeatherDisplay from "./components/conditional-rendering";
 import MyFirstComponent from "./components/first-component";
 import DateDisplay from "./components/first-jsx-component";
+import LogicalWeatherDisplay from "./components/logical-conditional-rendering";
 import UsernameList from "./components/rendering-arrays-of-data";
+import TernaryWeatherDisplay from "./components/ternary-conditional-rendering";
 import TodoListTable from "./components/todo-list-table";
 
 // App is also a function component
@@ -26,6 +28,8 @@ function App() {
       <DateDisplay />
       <WeatherDisplay />
       <UsernameList />
+      <TernaryWeatherDisplay />
+      <LogicalWeatherDisplay />
     </div>
   );
 }
