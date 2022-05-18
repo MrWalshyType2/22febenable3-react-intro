@@ -10,7 +10,9 @@ const UsernameList = () => {
 
     // each user is mapped to an li
     // - bad practice to use indexes, done here for the example
-    const usernameList = users.map((user, index) => <li key={index}>{user.username}</li>);
+    const userToListItem = (user, index) => <li key={index}>{user.username}</li>;
+
+    const usernameList = users.map(userToListItem);
 
     return (
         <div>

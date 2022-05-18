@@ -3,8 +3,10 @@ import MyFirstComponent from "./components/first-component";
 import DateDisplay from "./components/first-jsx-component";
 import LogicalWeatherDisplay from "./components/logical-conditional-rendering";
 import UsernameList from "./components/rendering-arrays-of-data";
+import EditUserForms from "./components/rendering-arrays-of-data-2";
 import TernaryWeatherDisplay from "./components/ternary-conditional-rendering";
 import TodoListTable from "./components/todo-list-table";
+import BlogPost from "./props/BlogPost";
 
 // App is also a function component
 function App() {
@@ -30,6 +32,13 @@ function App() {
       <UsernameList />
       <TernaryWeatherDisplay />
       <LogicalWeatherDisplay />
+      <EditUserForms />
+      <br /><br /><br /><br />
+
+      {/* passing props 
+          - we pass props as attributes
+      */}
+      <BlogPost title="The blog post" content="The blogs content" />
     </div>
   );
 }
