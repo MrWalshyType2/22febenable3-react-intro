@@ -9,7 +9,10 @@ import TodoListTable from "./components/todo-list-table";
 import BlogPost from "./props/BlogPost";
 import ClickCounter from "./state/ClickCounter";
 import EditUser from "./state/EditUser";
+import EditUserBetter from "./state/EditUserBetter";
 import Users from "./state/Users";
+import TodoList from "./todolist/TodoList";
+import BetterTodoList from "./todolist_lifted_state/BetterTodoList";
 
 // App is also a function component
 function App() {
@@ -55,7 +58,12 @@ function App() {
       
       {/* <EditUser user={user} /> */}
 
-      <Users />
+      {/* <Users /> */}
+      
+      {/* <EditUserBetter user={user} /> */}
+      {/* <TodoList /> */}
+
+      <BetterTodoList />
     </div>
   );
 }
